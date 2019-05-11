@@ -63,8 +63,9 @@ class PushToPusheServiceProvider extends ServiceProvider
     }
 
     /**
-     * Register PushToPush config file.
+     * Register PushToPushe config file.
      *
+     * @return void
      */
     public function registerConfigs()
     {
