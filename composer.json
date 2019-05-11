@@ -1,0 +1,49 @@
+{
+    "name": "journalctl/push-to-pushe",
+    "description": "Send push notification to pushe users",
+    "keywords": [
+        "laravel",
+        "fcm",
+        "firebase",
+        "pushe",
+        "lumen"
+    ],
+    "homepage": "https://github.com/journalctl/push-to-pushe",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yusef Arianpour",
+            "email": "info@asign.ir"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "7.*"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "autoload": {
+        "psr-4": {
+            "Journalctl\\PushToPushe\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Journalctl\\PushToPushe\\PushToPusheServiceProvider"
+            ]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
